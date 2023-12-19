@@ -5,8 +5,8 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 script {
-                    git url: 'https://github.com/PrasanthKumar0/Jenkins-Terraform-EC2-S3-Infrastructure.git'
-                    sh 'cd Jenkins-Terraform-EC2-S3-Infrastructure && terraform init -reconfigure'
+                    git url: 'https://github.com/Ramana-2020/Terraform-jenkins-EC2-S3-Infrastructure.git'
+                    sh 'cd Terraform-jenkins-EC2-S3-Infrastructure && terraform init -reconfigure'
                 }
             }
         }
@@ -14,8 +14,8 @@ pipeline {
         stage('Terraform Apply') {
             steps {
                 script {
-                    git url: 'https://github.com/PrasanthKumar0/Jenkins-Terraform-EC2-S3-Infrastructure.git'
-                    sh 'cd Jenkins-Terraform-EC2-S3-Infrastructure && terraform apply -auto-approve'
+                    git url: 'https://github.com/Ramana-2020/Terraform-jenkins-EC2-S3-Infrastructure.git'
+                    sh 'cd Terraform-jenkins-EC2-S3-Infrastructure && terraform apply -auto-approve'
                 }
             }
         }
@@ -23,8 +23,8 @@ pipeline {
         stage('Terraform Destroy') {
             steps {
                 script {
-                    git url: 'https://github.com/PrasanthKumar0/Jenkins-Terraform-EC2-S3-Infrastructure.git'
-                    sh 'cd Jenkins-Terraform-EC2-S3-Infrastructure && terraform destroy -auto-approve'
+                    git url: 'https://github.com/Ramana-2020/Terraform-jenkins-EC2-S3-Infrastructure.git'
+                    sh 'cd Terraform-jenkins-EC2-S3-Infrastructure && terraform destroy -auto-approve'
                 }
             }
         }
