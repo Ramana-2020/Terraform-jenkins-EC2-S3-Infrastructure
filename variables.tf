@@ -1,6 +1,6 @@
 variable "ami" {
   description = "EC2 instance AMI ID"
-  default     = "ami-0287a05f0ef0e9d9a"
+  default     = "ami-0fc5d935ebf8bc3bc"
 }
 
 variable "instance_type" {
@@ -16,7 +16,7 @@ variable "availability_zone" {
 
 variable "key_name" {
   description = "EC2 instance key pair name"
-  default     = "jpass"
+  default     = "ramana"
 }
 
 variable "security_groups" {
@@ -27,7 +27,7 @@ variable "security_groups" {
 
 variable "subnet_id" {
   description = "The subnet ID for the EC2 instance"
-  default     = "subnet-0e1e12286b0be59b8"  
+  default     = "subnet-0f3ccbfd2a393a6ed"  
 }
 
 variable "tags" {
@@ -40,10 +40,10 @@ variable "tags" {
 
 variable "region" {
   type    = string
-  default = "ap-south-1"
+  default = "us-east-1"
 }
 
 variable "s3_bucket" {
   type    = string
-  default = "prasanthkumar.000"
+  default = "venkataramana2020"
 }
