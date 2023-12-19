@@ -34,7 +34,7 @@ variable "tags" {
   type    = map(string)
   default = {
     Name        = "TF-JENKINS"
-    Environment = "Dev"
+    Environment = "jenkins"
   }
 }
 
