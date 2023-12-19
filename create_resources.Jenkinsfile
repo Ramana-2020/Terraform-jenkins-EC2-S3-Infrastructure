@@ -5,10 +5,10 @@ pipeline {
         AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
         AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
         TF_region = 'ap-south-1'
-        TF_bucket = 'prasanthkumar.000'
-        TF_VAR_key_name = 'jpass'
+        TF_bucket = 'venkataramana2020'
+        TF_VAR_key_name = 'ramana'
         TF_VAR_instance_type = 't2.micro'
-        GITHUB_REPO_URL = 'https://github.com/PrasanthKumar0/Jenkins-Terraform-EC2-S3-Infrastructure.git'
+        GITHUB_REPO_URL = 'https://github.com/Ramana-2020/Terraform-jenkins-EC2-S3-Infrastructure.git'
     }
 
     stages {
